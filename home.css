@@ -28,7 +28,7 @@ nav{
    border-radius: 5px;
 }
 nav ul{
-    float: center;
+    float: left;
     margin-left: 20px;
 }
 nav ul li{
@@ -85,7 +85,7 @@ a:hover{
     }
     ul{
         position: fixed;
-        width: 30%;
+        width: 40%;
         height: 100vh;
         top: 80px;
         left: -100%;
@@ -97,6 +97,7 @@ a:hover{
     }
     nav ul li a{
         font-size: 12px;
+        
     }
     a:hover,a.active{
         background-color: none;
