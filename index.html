@@ -41,6 +41,14 @@
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam consequuntur eaque tempora eius officiis perferendis ratione deserunt hic aliquam consequatur. Minus assumenda rem ipsum sed molestiae fugit sequi harum voluptates.
 
     </main>
-    <script src="js/overlay.js"></script>
+    <script class="overlay">
+        document.getElementById('check').addEventListener('change', function () {
+    document.querySelector('.overlay').style.display = this.checked ? 'block' : 'none';
+});
+document.querySelector('.overlay').addEventListener('click', function () {
+    document.getElementById('check').checked = false;
+    this.style.display = 'none';
+});
+    </script>
 </body>
 </html>
