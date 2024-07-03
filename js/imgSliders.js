@@ -1,4 +1,4 @@
-let slideIndex = 1;
+let slideIndex = 0;
 let autoSlideTimer;
 
 showSlides(slideIndex);
