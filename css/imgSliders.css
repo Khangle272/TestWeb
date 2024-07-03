@@ -1,0 +1,72 @@
+.mySlides{
+    display: none;
+}
+.mySlides img{
+   max-height: 400px;
+}
+.slideshow-containter{
+    position: relative;
+}
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 5px;
+    user-select: none;
+}
+.next{
+    right: 0;
+}
+.prev:hover, .next:hover{
+    background-color: rgb(0, 0, 0, 0.8);
+}
+.dot-container {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    
+}
+.activeDot, .dot:hover{
+    background-color: #717171;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+    from{opacity: .5}
+    to{opacity: 1;}
+}
+@keyframes fade{
+    from{opacity: .5}
+    to{opacity: 1;}
+}
+@media (max-width: 858px) {
+    .prev, .next{
+        font-size: 12px;
+        padding: 12px;
+    }
+    .dot{
+        height: 12px;
+        width: 12px;
+    }
+}

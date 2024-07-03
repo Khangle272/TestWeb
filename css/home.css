@@ -12,7 +12,7 @@ nav {
     height: 80px;
     width: 100%;
     box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25);
-    z-index: 4;
+    z-index: 5;
     position: fixed;
     background-color: white;
 }
@@ -85,10 +85,9 @@ a:hover {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 1; 
+    z-index: 4; 
     display: none;
 }
-
 @media (max-width: 952px) {
     .logo {
         font-size: 20px;
@@ -125,10 +124,12 @@ a:hover {
         left: -100%;
         text-align: left;
         transition: all .5s ease;
-        z-index: 3; 
+        z-index: 5; 
     }
     nav ul li {
         display: block;
+        border-bottom: 1px solid;
+        margin: 0;
     }
     nav ul li a {
         font-size: 12px;
@@ -142,8 +143,5 @@ a:hover {
         margin-left: 0;
         background-color: hsl(0, 0%, 95%);
         margin-top: 1px;
-    }
-    #check:checked ~ .overlay {
-        display: block;
     }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/imgSliders.css">
 <body>
     <nav>
         <input type="checkbox" id="check">
@@ -17,30 +18,38 @@
         </label>
         <p><a href="index.html" class="logo">LƯU HƯNG THÀNH</a></p>
         <ul>
+            <li><a class="active" href="#">Trang chủ</a></li>
             <li><a class="active" href="#">Sản Phẩm</a></li>
             <li><a class="active" href="#">Về Chúng Tôi</a></li>
             <li><a class="active" href="#">Liên Hệ</a></li>
             <li><a class="active" href="#">FAQ</a></li>
         </ul>
     </nav>
-    <div class="overlay"></div>
-    <main>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam consequuntur eaque tempora eius officiis perferendis ratione deserunt hic aliquam consequatur. Minus assumenda rem ipsum sed molestiae fugit sequi harum voluptates.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam consequuntur eaque tempora eius officiis perferendis ratione deserunt hic aliquam consequatur. Minus assumenda rem ipsum sed molestiae fugit sequi harum voluptates.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam consequuntur eaque tempora eius officiis perferendis ratione deserunt hic aliquam consequatur. Minus assumenda rem ipsum sed molestiae fugit sequi harum voluptates.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam consequuntur eaque tempora eius officiis perferendis ratione deserunt hic aliquam consequatur. Minus assumenda rem ipsum sed molestiae fugit sequi harum voluptates.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam consequuntur eaque tempora eius officiis perferendis ratione deserunt hic aliquam consequatur. Minus assumenda rem ipsum sed molestiae fugit sequi harum voluptates.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam consequuntur eaque tempora eius officiis perferendis ratione deserunt hic aliquam consequatur. Minus assumenda rem ipsum sed molestiae fugit sequi harum voluptates.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam consequuntur eaque tempora eius officiis perferendis ratione deserunt hic aliquam consequatur. Minus assumenda rem ipsum sed molestiae fugit sequi harum voluptates.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam consequuntur eaque tempora eius officiis perferendis ratione deserunt hic aliquam consequatur. Minus assumenda rem ipsum sed molestiae fugit sequi harum voluptates.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam consequuntur eaque tempora eius officiis perferendis ratione deserunt hic aliquam consequatur. Minus assumenda rem ipsum sed molestiae fugit sequi harum voluptates.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam consequuntur eaque tempora eius officiis perferendis ratione deserunt hic aliquam consequatur. Minus assumenda rem ipsum sed molestiae fugit sequi harum voluptates.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam consequuntur eaque tempora eius officiis perferendis ratione deserunt hic aliquam consequatur. Minus assumenda rem ipsum sed molestiae fugit sequi harum voluptates.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam consequuntur eaque tempora eius officiis perferendis ratione deserunt hic aliquam consequatur. Minus assumenda rem ipsum sed molestiae fugit sequi harum voluptates.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam consequuntur eaque tempora eius officiis perferendis ratione deserunt hic aliquam consequatur. Minus assumenda rem ipsum sed molestiae fugit sequi harum voluptates.
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam consequuntur eaque tempora eius officiis perferendis ratione deserunt hic aliquam consequatur. Minus assumenda rem ipsum sed molestiae fugit sequi harum voluptates.
 
-    </main>
+    <div class="overlay"></div>
+
+    <div class="slideshow-containter">
+        <div class="mySlides fade">
+            <img src="pictures/1.jpg" style="width: 100%;">
+        </div>  
+        <div class="mySlides fade">
+            <img src="pictures/2.jpg" style="width: 100%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="pictures/3.jpeg" style="width: 100%;">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+       
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    
     <script src="js/overlay.js"></script>
+    <script src="js/imgSliders.js"></script>
 </body>
 </html>
