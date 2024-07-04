@@ -98,7 +98,7 @@ a:hover {
         font-size: 14px;
     }
 }
-@media (max-width: 858px) {
+@media (max-width: 768px) {
     .checkbtn {
         display: block;
     }

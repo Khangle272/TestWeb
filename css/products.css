@@ -1,0 +1,44 @@
+.products img{
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+}
+.products p{
+    color: black;
+}
+.products{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+.products:hover {
+    background-color: gray;
+}
+
+@media (max-Width: 768px){
+    .products-container{
+        grid-template-columns: repeat(1, 1fr);  
+    }
+    .products img{
+        width: 150px;
+        height: 150px;
+    }
+    .products{
+        width: 250px;
+        height: 250px;
+    }
+}
