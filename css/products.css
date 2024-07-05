@@ -6,6 +6,9 @@
 .products p{
     color: black;
 }
+.products p{
+    padding: 4px;
+}
 .products{
     width: 300px;
     height: 300px;
@@ -24,6 +27,7 @@
     gap: 30px;
     justify-items: center;
     align-items: center;
+    padding-bottom: 15px;
 }
 .products:hover {
     background-color: gray;

@@ -1,0 +1,35 @@
+.footer{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: hsla(0, 0%, 90%, 0.25);
+}
+.quick-links a {
+    color: black;
+    text-decoration: none;
+}
+.quick-links p{
+    padding: 5px;
+}
+.quick-links a:hover {
+    background-color: hsl(0, 0%, 80%);
+    border-radius: 5px;
+}
+.contact-info p, .contact-info a {
+    color: black;
+    padding: 5px;
+}
+.contact-info a:hover{
+    background-color: hsl(0, 0%, 80%);
+    border-radius: 5px;
+}
+.footer-bottom {
+    width: 100%;
+    background-color: hsla(0, 0%, 90%, 0.25);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
