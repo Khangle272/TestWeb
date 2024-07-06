@@ -40,6 +40,11 @@
     }
     .ProductImg{
         display: inline-block;
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ProductDetails {
+        max-width: 600px;
+        padding-left: 25px;
     }
 }
