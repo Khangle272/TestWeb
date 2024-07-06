@@ -1,6 +1,6 @@
 .product-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 20px;
     padding-top: 150px;
     max-width: 1200px;
@@ -31,4 +31,14 @@
 }
 .ProductDetails .price{
     padding-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .product-container{
+        padding-top: 80px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .ProductImg{
+        padding-left: 30px;
+    }
 }
