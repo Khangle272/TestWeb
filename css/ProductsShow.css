@@ -39,6 +39,7 @@
         grid-template-columns: 1fr;
     }
     .ProductImg{
-        padding-left: 30px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
