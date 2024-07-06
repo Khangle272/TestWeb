@@ -34,7 +34,7 @@
 }
 @media (max-width: 768px) {
     .product-container{
-        
+        padding-top: 80px;
         display: grid;
         grid-template-columns: 1fr;
     }
