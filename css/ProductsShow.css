@@ -4,9 +4,8 @@
     padding: 20px;
     padding-top: 150px;
     max-width: 1200px;
-    
 }
-.ProductImg img {
+.ProductImg img{
     max-width: 400px;
     width: 100%;
     padding-bottom: 40px;
@@ -14,6 +13,14 @@
     border-radius: 10px;
     box-shadow: 0px 0px 3px hsla(0, 0%, 0%, 0.4);
     cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.ProductImg img:hover{
+   transform: scale(1.1);
 }
 .ProductImg {
     margin-right: 20px;
@@ -22,7 +29,6 @@
     max-width: 600px;
     padding-left: 60px;
 }
-
 .ProductDetails h3 {
     font-size: 2em;
     margin-bottom: 20px;
@@ -32,6 +38,34 @@
 }
 .ProductDetails .price{
     padding-bottom: 20px;
+}
+.popup-img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.popup-img span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.popup-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 750px;
+    object-fit: cover;
 }
 @media (max-width: 768px) {
     .product-container{
@@ -47,5 +81,8 @@
     .ProductDetails {
         max-width: 600px;
         padding-left: 25px;
+    }
+    .popup-img img{
+        width: 95%;
     }
 }

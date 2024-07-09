@@ -31,8 +31,7 @@
 
     <div class="product-container">
         <div class="ProductImg">
-            <img src="pictures/samsung-removebg-preview.png" alt="">
-            
+            <img onclick="showPopup()" src="pictures/samsung-removebg-preview.png" alt="">
         </div>
         <div class="ProductDetails">
             <h3>Samsung</h3>
@@ -43,6 +42,12 @@
             <p class="contact">Gọi hotline để đặt hàng: 097 699 0410</p>
         </div>
     </div>
+
+    <div class="popup-img">
+        <span>&times;</span>
+        <div><img src="pictures/samsung-removebg-preview.png" alt=""></div>
+    </div>
+
     <div class="footer">
         <div class="quick-links">
             <h3>Liên kết nhanh</h3>
@@ -51,16 +56,18 @@
             <p><a href="about.html">Về chúng tôi</a></p>
             <p><a href="contact.html">Liên hệ</a></p>
         </div>
-      <div class="contact-info">
-        <h3>Liên hệ</h3>
-        <p>Điện thoại: 097 699 0410</p>
-        <p>Địa chỉ: 1780, Tỉnh Lộ 10, Phường Tân Tạo, Quận Bình Tân</p>
-        <p><a href="#">Bản đồ</a></p>
-      </div>
-</div>
-<div class="footer-bottom">
-    <p>© 2024 Lưu Hương Thành. All rights reserved.</p>
-  </div>
+        <div class="contact-info">
+            <h3>Liên hệ</h3>
+            <p>Điện thoại: 097 699 0410</p>
+            <p>Địa chỉ: 1780, Tỉnh Lộ 10, Phường Tân Tạo, Quận Bình Tân</p>
+            <p><a href="#">Bản đồ</a></p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2024 Lưu Hương Thành. All rights reserved.</p>
+    </div>
     <script src="js/overlay.js"></script>
+    <script src="js/zoomImg.js"></script>
 </body>
 </html>
