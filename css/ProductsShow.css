@@ -60,6 +60,7 @@
     z-index: 100;
 }
 .popup-img img{
+    touch-action: none;
     position: absolute;
     top: 50%;
     left: 50%;
