@@ -56,7 +56,6 @@ a:hover {
 }
 .hamburger div {
     width: 30px;
-    height: 2px;
     background-color: black;
     margin: 6px 0;
 }
@@ -104,9 +103,10 @@ a:hover {
     }
     .hamburger div {
         width: 20px;
-        height: 1px;
+        height: 2px;
         background-color: black;
         margin: 5px 0;
+        
     }
     nav {
         height: 50px;
