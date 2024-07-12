@@ -1,3 +1,4 @@
+
 function showPopup() {
     document.querySelector('.popup-img').style.display = 'block';
 }
@@ -7,13 +8,13 @@ document.querySelector('.popup-img span').onclick = function() {
     resetZoom();
 }
 
-var scale = 1;
-var panning = false;
-var pointX = 0;
-var pointY = 0;
-var start = {x: 0, y: 0};
-var zoom = document.getElementById("zoom");
-var initialDistance = null;
+let scale = 1;
+let panning = false;
+let pointX = 0;
+let pointY = 0;
+let start = {x: 0, y: 0};
+let zoom = document.getElementById("zoom");
+let initialDistance = null;
 
 function setTransform() {
     zoom.style.transform = "translate(" + pointX + "px," + pointY + "px) scale(" + scale + ")";
@@ -46,10 +47,10 @@ function onMouseMove(e) {
 
 function onWheel(e) {
     e.preventDefault();
-    var xs = (e.clientX - pointX) / scale;
-    var ys = (e.clientY - pointY) / scale;
-    var delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
-    var previousScale = scale;
+    let xs = (e.clientX - pointX) / scale;
+    let ys = (e.clientY - pointY) / scale;
+    let delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
+    let previousScale = scale;
     scale *= (delta > 0) ? 1.07 : 1 / 1.07; // Adjust for sensivity
     pointX -= xs * (scale - previousScale);
     pointY -= ys * (scale - previousScale);
@@ -74,8 +75,8 @@ function onTouchMove(e) {
         pointY = (e.touches[0].clientY - start.y);
         setTransform();
     } else if (e.touches.length === 2 && initialDistance) {
-        var currentDistance = getDistance(e.touches[0], e.touches[1]);
-        var deltaScale = currentDistance / initialDistance;
+        let currentDistance = getDistance(e.touches[0], e.touches[1]);
+        let deltaScale = currentDistance / initialDistance;
         initialDistance = currentDistance;
         scale *= deltaScale;
         setTransform();
@@ -90,8 +91,8 @@ function onTouchEnd(e) {
 }
 
 function getDistance(touch1, touch2) {
-    var dx = touch1.clientX - touch2.clientX;
-    var dy = touch1.clientY - touch2.clientY;
+    let dx = touch1.clientX - touch2.clientX;
+    let dy = touch1.clientY - touch2.clientY;
     return Math.sqrt(dx * dx + dy * dy);
 }
 
