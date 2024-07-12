@@ -26,7 +26,7 @@
     position: absolute;
     padding-left: 10px;
     padding-top: 5px;
-    
+
 }
 .ProductImg #clickToZoom:hover{
    transform: scale(1.1);
@@ -76,13 +76,12 @@
     transform: translate(-50%,-50%);
     max-width: 100%;
     transition: transform 0.25s ease;
+    cursor: grab;
 }
 .popup-img img:active {
     cursor: grabbing;
 }
-.popup-img img:hover{
-    cursor: grab;
-}
+
 @media (max-width: 768px) {
     .product-container{
         padding-top: 80px;

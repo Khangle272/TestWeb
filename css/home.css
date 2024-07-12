@@ -61,6 +61,8 @@ a:hover {
     display: none;
     cursor: pointer;
     user-select: none;
+    padding: 5px;
+    border-radius: 5px;
 }
 .checkbtn:hover {
     background-color: hsl(0, 0%, 95%);
@@ -93,7 +95,7 @@ a:hover {
     .checkbtn {
         display: block;
         font-size: 24px;
-        padding-top: 5px;
+        
     }
     nav {
         height: 50px;
