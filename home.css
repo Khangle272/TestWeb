@@ -6,28 +6,33 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
 }
 nav {
-    height: 80px;
+    height: 60px;
     width: 100%;
     box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25);
-    z-index: 4;
+    z-index: 5;
     position: fixed;
     background-color: white;
 }
 .logo {
     font-weight: bold;
     text-align: right;
-    padding-top: 25px;
+    padding-top: 15px;
     padding-right: 20px;
     padding-left: 20px;
     font-size: 24px;
     float: right;
     user-select: none;
-    color: black;
-    height: 80px;
-    border-radius: 5px;
+    background: linear-gradient(90deg, #FF5F6D , #FFC371);
+    background-clip: text;
+    color: transparent;
+    height: 60px;
 }
 nav ul {
     float: center;
@@ -35,7 +40,7 @@ nav ul {
 }
 nav ul li {
     display: inline-block;
-    line-height: 80px;
+    line-height: 60px;
     margin: 0 5px;
 }
 nav ul li a {
@@ -43,37 +48,28 @@ nav ul li a {
     font-size: 17px;
     text-transform: uppercase;
     padding: 7px 12px;
-    border-radius: 5px;
+    padding-bottom: 15px;
     user-select: none;
 }
-a:hover {
-    background-color: hsl(0, 0%, 95%);
-    transition: .5s ease;
-}
-.hamburger {
-    display: inline-block;
-    cursor: pointer;
-}
-.hamburger div {
-    width: 30px;
-    height: 2px;
-    background-color: black;
-    margin: 6px 0;
+
+a:not(.logo, .prev, .next, .exclude):hover {
+    border-bottom: 5px solid lightblue;
+    transition: .1s ease;
+    color: lightblue;
 }
 .checkbtn {
     font-size: 30px;
     float: left;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 20px;
     display: none;
     cursor: pointer;
     user-select: none;
+    padding: 5px;
+    border-radius: 5px;
 }
 .checkbtn:hover {
     background-color: hsl(0, 0%, 95%);
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 5px;
 }
 #check {
     display: none;
@@ -85,10 +81,16 @@ a:hover {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 1; 
+    z-index: 4; 
     display: none;
 }
-
+#emoji{
+    padding-right: 5px;
+}
+.activePage{
+    color: lightblue;
+    transition: .1s ease;
+}
 @media (max-width: 952px) {
     .logo {
         font-size: 20px;
@@ -99,23 +101,18 @@ a:hover {
         font-size: 14px;
     }
 }
-@media (max-width: 858px) {
+@media (max-width: 768px) {
     .checkbtn {
         display: block;
-    }
-    .hamburger div {
-        width: 20px;
-        height: 1px;
-        background-color: black;
-        margin: 5px 0;
+        font-size: 24px;
     }
     nav {
         height: 50px;
     }
     .logo {
-        font-size: 14px;
+        font-size: 16px;
         margin-top: 0px;
-        padding-top: 17px;
+        padding-top: 15px;
     }
     ul {
         position: fixed;
@@ -125,16 +122,18 @@ a:hover {
         left: -100%;
         text-align: left;
         transition: all .5s ease;
-        z-index: 3; 
+        z-index: 5; 
     }
     nav ul li {
         display: block;
+        margin: 0;
     }
     nav ul li a {
         font-size: 12px;
+        padding-right: 35%;
     }
     a:hover {
-        background-color: hsl(0, 0%, 90%);
+        color: lightblue;
     }
     #check:checked ~ ul {
         left: 0;
@@ -143,7 +142,5 @@ a:hover {
         background-color: hsl(0, 0%, 95%);
         margin-top: 1px;
     }
-    #check:checked ~ .overlay {
-        display: block;
-    }
+    
 }
