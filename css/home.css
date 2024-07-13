@@ -29,7 +29,9 @@ nav {
     font-size: 24px;
     float: right;
     user-select: none;
-    color: black;
+    background: linear-gradient(90deg, #FF5F6D , #FFC371);
+    background-clip: text;
+    color: transparent;
     height: 60px;
 }
 nav ul {
@@ -46,12 +48,14 @@ nav ul li a {
     font-size: 17px;
     text-transform: uppercase;
     padding: 7px 12px;
-    border-radius: 5px;
+    padding-bottom: 15px;
     user-select: none;
 }
-a:hover {
+
+a:not(.logo, .prev, .next, .exclude):hover {
+    border-bottom: 5px solid lightblue;
+    transition: .1s ease;
     color: lightblue;
-    transition: .5s ease;
 }
 .checkbtn {
     font-size: 30px;
@@ -80,7 +84,13 @@ a:hover {
     z-index: 4; 
     display: none;
 }
-
+#emoji{
+    padding-right: 5px;
+}
+.activePage{
+    color: lightblue;
+    transition: .1s ease;
+}
 @media (max-width: 952px) {
     .logo {
         font-size: 20px;
@@ -95,7 +105,6 @@ a:hover {
     .checkbtn {
         display: block;
         font-size: 24px;
-        
     }
     nav {
         height: 50px;

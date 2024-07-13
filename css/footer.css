@@ -16,7 +16,7 @@
 }
 .quick-links a:hover {
     color: lightblue;
-    transition: .5s ease;
+    transition: .1s ease;
 }
 .contact-info p, .contact-info a {
     color: black;
@@ -24,7 +24,7 @@
 }
 .contact-info a:hover{
     color: lightblue;
-    transition: .5s ease;
+    transition: .1s ease;
 }
 .footer-bottom {
     width: 100%;

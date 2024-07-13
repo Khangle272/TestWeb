@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6b8083f697.js" crossorigin="anonymous"></script>
+</head>
 <body>
     <nav>
         <input type="checkbox" id="check">
@@ -18,10 +19,10 @@
         </label>
         <p><a href="index.html" class="logo">LƯU HƯƠNG THÀNH</a></p>
         <ul>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="products.html">Sản Phẩm</a></li>
-            <li><a href="about.html">Về Chúng Tôi</a></li>
-            <li><a href="contact.html">Liên Hệ</a></li>
+            <li><a class="activePage" href="index.html"><i id="emoji" class="fa-solid fa-house"></i> Trang chủ</a></li>
+            <li><a href="products.html"><i id="emoji" class="fa-solid fa-store"></i> Sản Phẩm</a></li>
+            <li><a href="about.html"><i id="emoji"class="fa-solid fa-circle-info"></i> Về Chúng Tôi</a></li>
+            <li><a href="contact.html"><i id="emoji" class="fa-solid fa-phone"></i> Liên Hệ</a></li>
         </ul>
     </nav>  
 
@@ -49,25 +50,25 @@
     <br> 
     <h1 style="text-align: center;">Các Sản Phẩm</h1> <br>
     <div class="products-container">
-        <a href="Iphone.html"><div class="products">
+        <a class="exclude" href="Iphone.html"><div class="products">
             <img src="pictures/iphone-removebg-preview.png" alt="">
            <P>iphone</P>
            <P>32.680.000đ</P>
            <P style="font-weight: bold;">Liên hệ</P>
         </div></a>
-        <a href="GamingPhone.html"><div class="products">
+        <a class="exclude" href="GamingPhone.html"><div class="products">
             <img src="pictures/gamingphone-removebg-preview.png" alt="">
             <P>Gaming Phone</P>   
             <P>12.780.000đ</P>
             <P style="font-weight: bold;">Liên hệ</P>
         </div></a>
-        <a href="Oppo.html"><div class="products">
+        <a class="exclude" href="Oppo.html"><div class="products">
             <img src="pictures/oppo-removebg-preview.png" alt="">
             <P>OPPO</P>
             <P>16.660.000đ</P>
             <P style="font-weight: bold;">Liên hệ</P>
         </div></a>
-        <a href="Samsung.html"><div class="products">
+        <a class="exclude" href="Samsung.html"><div class="products">
             <img src="pictures/samsung-removebg-preview.png" alt="">
             <P>Samsung</P>
             <P>22.540.000đ</P>
@@ -75,23 +76,23 @@
         </div></a>
     </div>
     <div class="footer">
-            <div class="quick-links">
-                <h3>Liên kết nhanh</h3>
-              <p><a href="index.html">Trang chủ</a></p>
-              <p><a href="products.html">Sản phẩm</a></p>
-              <p><a href="about.html">Về chúng tôi</a></p>
-              <p><a href="contact.html">Liên hệ</a></p>
-            </div>
-          <div class="contact-info">
+        <div class="quick-links">
+            <h3>Liên kết nhanh</h3>
+            <p><a href="index.html">Trang chủ</a></p>
+            <p><a href="products.html">Sản phẩm</a></p>
+            <p><a href="about.html">Về chúng tôi</a></p>
+            <p><a href="contact.html">Liên hệ</a></p>
+        </div>
+        <div class="contact-info">
             <h3>Liên hệ</h3>
             <p>Điện thoại: 097 699 0410</p>
             <p>Địa chỉ: 1780, Tỉnh Lộ 10, Phường Tân Tạo, Quận Bình Tân</p>
             <p><a href="#">Bản đồ</a></p>
-          </div>
+        </div>
     </div>
     <div class="footer-bottom">
         <p>© 2024 Lưu Hương Thành. All rights reserved.</p>
-      </div>
+    </div>
     <script src="js/overlay.js"></script>
     <script src="js/imgSliders.js"></script>
 </body>
