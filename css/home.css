@@ -52,10 +52,10 @@ nav ul li a {
     user-select: none;
 }
 
-a:not(.logo, .prev, .next, .exclude):hover {
-    border-bottom: 5px solid lightblue;
+a:not(.logo, .prev, .next, .products-container a):hover {
+    border-bottom: 5px solid #FF5F6D;
     transition: .1s ease;
-    color: lightblue;
+    color: #FF5F6D;
 }
 .checkbtn {
     font-size: 30px;
@@ -88,7 +88,7 @@ a:not(.logo, .prev, .next, .exclude):hover {
     padding-right: 5px;
 }
 .activePage{
-    color: lightblue;
+    color: #FF5F6D;
     transition: .1s ease;
 }
 @media (max-width: 952px) {

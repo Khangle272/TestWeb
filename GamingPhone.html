@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/ProductsShow.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/imgSelector.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6b8083f697.js" crossorigin="anonymous"></script>
 </head>
@@ -14,7 +15,7 @@
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i> 
+            <i class="fa-solid fa-bars"></i>  
         </label>
         <p><a href="index.html" class="logo">LƯU HƯƠNG THÀNH</a></p>
         <ul>
@@ -29,9 +30,13 @@
 
     <div class="product-container">
         <div class="ProductImg">
-            <img src="pictures/gamingphone-removebg-preview.png" alt="">
-            <i onclick="showPopup()" id="clickToZoom" class="fa-solid fa-magnifying-glass-plus"></i>
-            
+            <img id="mainImage" onclick="showPopup()" src="pictures/gamingphone-removebg-preview.png" alt="">
+            <div class="thumbnail-images">
+                <img onclick="changeImage('pictures/gamingphone-removebg-preview.png')" src="pictures/gamingphone-removebg-preview.png" alt="Iphone Image 2">   
+                <img onclick="changeImage('pictures/iphone-removebg-preview.png')" src="pictures/iphone-removebg-preview.png" alt="Iphone Image 1">
+                <img onclick="changeImage('pictures/samsung-removebg-preview.png')" src="pictures/samsung-removebg-preview.png" alt="Iphone Image 1">
+                <img onclick="changeImage('pictures/oppo-removebg-preview.png')" src="pictures/oppo-removebg-preview.png" alt="Iphone Image 2">      
+            </div>
         </div>
         <div class="ProductDetails">
             <h3>Gaming Phone</h3>
@@ -44,8 +49,8 @@
     </div>
 
     <div class="popup-img">
-        <span>&times;</span>
-        <div><img id="zoom" src="pictures/gamingphone-removebg-preview.png" alt=""></div>
+            <span>&times;</span>
+            <img id="zoom" src="pictures/iphone-removebg-preview.png" alt="iphone">
       </div>
 
     <div class="footer">
@@ -62,7 +67,7 @@
         <p>Địa chỉ: 1780, Tỉnh Lộ 10, Phường Tân Tạo, Quận Bình Tân</p>
         <p><a href="#">Bản đồ</a></p>
       </div>
-</div>
+    </div>
 
     <div class="footer-bottom">
         <p>© 2024 Lưu Hương Thành. All rights reserved.</p>
@@ -70,5 +75,6 @@
 
     <script src="js/overlay.js"></script>
     <script src="js/zoomImg.js"></script>
+    <script src="js/imgSelector.js"></script>
 </body>
 </html>
