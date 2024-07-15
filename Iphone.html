@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,24 @@
     <link rel="stylesheet" href="css/ProductsShow.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/imgSelector.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/6b8083f697.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>  
+            <i class="fa-solid fa-bars"></i>
         </label>
         <p><a href="index.html" class="logo">LƯU HƯƠNG THÀNH</a></p>
         <ul>
             <li><a href="index.html"><i id="emoji" class="fa-solid fa-house"></i> Trang chủ</a></li>
-            <li><a class="activePage" href="products.html"><i id="emoji" class="fa-solid fa-store"></i> Sản Phẩm</a></li>
-            <li><a href="about.html"><i id="emoji"class="fa-solid fa-circle-info"></i> Về Chúng Tôi</a></li>
+            <li><a class="activePage" href="products.html"><i id="emoji" class="fa-solid fa-store"></i> Sản Phẩm</a>
+            </li>
+            <li><a href="about.html"><i id="emoji" class="fa-solid fa-circle-info"></i> Về Chúng Tôi</a></li>
             <li><a href="contact.html"><i id="emoji" class="fa-solid fa-phone"></i> Liên Hệ</a></li>
         </ul>
     </nav>
@@ -32,26 +37,32 @@
         <div class="ProductImg">
             <img id="mainImage" onclick="showPopup()" src="pictures/iphone-removebg-preview.png" alt="">
             <div class="thumbnail-images">
-                <img onclick="changeImage('pictures/iphone-removebg-preview.png')" src="pictures/iphone-removebg-preview.png" alt="Iphone Image 1">
-                <img onclick="changeImage('pictures/samsung-removebg-preview.png')" src="pictures/samsung-removebg-preview.png" alt="Iphone Image 1">
-                <img onclick="changeImage('pictures/oppo-removebg-preview.png')" src="pictures/oppo-removebg-preview.png" alt="Iphone Image 2">    
-                <img onclick="changeImage('pictures/gamingphone-removebg-preview.png')" src="pictures/gamingphone-removebg-preview.png" alt="Iphone Image 2">   
+                <img onclick="changeImage('pictures/iphone-removebg-preview.png')"
+                    src="pictures/iphone-removebg-preview.png" alt="Iphone Image 1">
+                <img onclick="changeImage('pictures/samsung-removebg-preview.png')"
+                    src="pictures/samsung-removebg-preview.png" alt="Iphone Image 1">
+                <img onclick="changeImage('pictures/oppo-removebg-preview.png')"
+                    src="pictures/oppo-removebg-preview.png" alt="Iphone Image 2">
+                <img onclick="changeImage('pictures/gamingphone-removebg-preview.png')"
+                    src="pictures/gamingphone-removebg-preview.png" alt="Iphone Image 2">
             </div>
         </div>
         <div class="ProductDetails">
             <h3>Iphone 15</h3>
             <p class="price">$999.00</p>
             <p class="description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, vel architecto? Beatae in quod facere? Nostrum dolorem, sit perspiciatis facere vel, modi at reiciendis delectus autem laborum tempore. Amet, ut.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, vel architecto? Beatae in quod facere?
+                Nostrum dolorem, sit perspiciatis facere vel, modi at reiciendis delectus autem laborum tempore. Amet,
+                ut.
             </p>
             <p class="contact">Gọi hotline để đặt hàng: 097 699 0410</p>
         </div>
     </div>
 
     <div class="popup-img">
-            <span>&times;</span>
-            <img id="zoom" src="pictures/iphone-removebg-preview.png" alt="iphone">
-      </div>
+        <span>&times;</span>
+        <img id="zoom" src="pictures/iphone-removebg-preview.png" alt="iphone">
+    </div>
 
     <div class="footer">
         <div class="quick-links">
@@ -61,12 +72,12 @@
             <p><a href="about.html">Về chúng tôi</a></p>
             <p><a href="contact.html">Liên hệ</a></p>
         </div>
-      <div class="contact-info">
-        <h3>Liên hệ</h3>
-        <p>Điện thoại: 097 699 0410</p>
-        <p>Địa chỉ: 1780, Tỉnh Lộ 10, Phường Tân Tạo, Quận Bình Tân</p>
-        <p><a href="#">Bản đồ</a></p>
-      </div>
+        <div class="contact-info">
+            <h3>Liên hệ</h3>
+            <p>Điện thoại: 097 699 0410</p>
+            <p>Địa chỉ: 1780, Tỉnh Lộ 10, Phường Tân Tạo, Quận Bình Tân</p>
+            <p><a href="#">Bản đồ</a></p>
+        </div>
     </div>
 
     <div class="footer-bottom">
@@ -77,4 +88,5 @@
     <script src="js/zoomImg.js"></script>
     <script src="js/imgSelector.js"></script>
 </body>
+
 </html>

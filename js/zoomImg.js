@@ -3,7 +3,7 @@ function showPopup() {
     document.querySelector('.popup-img').style.display = 'block';
 }
 
-document.querySelector('.popup-img span').onclick = function() {
+document.querySelector('.popup-img span').onclick = function () {
     document.querySelector('.popup-img').style.display = 'none';
     resetZoom();
 }
@@ -12,7 +12,7 @@ let scale = 1;
 let panning = false;
 let pointX = 0;
 let pointY = 0;
-let start = {x: 0, y: 0};
+let start = { x: 0, y: 0 };
 let zoom = document.getElementById("zoom");
 let initialDistance = null;
 
@@ -29,7 +29,7 @@ function resetZoom() {
 //For Computer
 function onMouseDown(e) {
     e.preventDefault();
-    start = {x: e.clientX - pointX, y: e.clientY - pointY};
+    start = { x: e.clientX - pointX, y: e.clientY - pointY };
     panning = true;
 }
 
@@ -60,10 +60,10 @@ function onWheel(e) {
 //For Mobile
 function onTouchStart(e) {
     if (e.touches.length === 1) {
-        start = {x: e.touches[0].clientX - pointX, y: e.touches[0].clientY - pointY};
+        start = { x: e.touches[0].clientX - pointX, y: e.touches[0].clientY - pointY };
         panning = true;
     } else if (e.touches.length === 2) {
-        panning = false; 
+        panning = false;
         initialDistance = getDistance(e.touches[0], e.touches[1]);
     }
 }

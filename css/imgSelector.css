@@ -1,8 +1,9 @@
 .thumbnail-images {
     display: flex;
     margin-top: 10px;
-    justify-content: center; 
+    justify-content: center;
 }
+
 .thumbnail-images img {
     width: 65px;
     height: 65px;
@@ -11,9 +12,11 @@
     cursor: pointer;
     border: 2px solid transparent;
 }
+
 .thumbnail-images img:hover {
     border: 2px solid #000;
 }
+
 #mainImage {
     width: 300px;
     height: 300px;
@@ -21,6 +24,7 @@
     display: block;
     margin: 0 auto;
 }
+
 .ProductImg {
     text-align: center;
 }

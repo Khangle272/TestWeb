@@ -52,13 +52,13 @@ function autoSlides() {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " activeDot";
 
-    autoSlideTimer = setTimeout(autoSlides, 10000); 
+    autoSlideTimer = setTimeout(autoSlides, 10000);
 }
 
 // Reset autoslides after user click prev or next
 function resetAutoSlide() {
     clearTimeout(autoSlideTimer);
-    autoSlideTimer = setTimeout(autoSlides, 10000); 
+    autoSlideTimer = setTimeout(autoSlides, 10000);
 }
 
 autoSlides();
