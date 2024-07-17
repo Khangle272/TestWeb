@@ -1,0 +1,30 @@
+main {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: calc(100vh - 30vh); 
+    padding: 20px;
+}
+h1 {    
+    padding-bottom: 30px;
+    text-align: center;
+    background: linear-gradient(90deg, #FF5F6D, #FFC371);
+    background-clip: text;
+    color: transparent;
+    font-size: 48px;
+}
+.location{
+    padding-bottom: 30px;
+    font-size: 24px;
+    text-align: center;
+}
+.phoneNumber{
+    font-size: 24px;
+    text-align: center;
+}
+.location i{
+    padding-right: 10px;
+}
+.phoneNumber i{
+    padding-right: 10px;
+}
