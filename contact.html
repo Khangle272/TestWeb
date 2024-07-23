@@ -20,13 +20,24 @@
         <label for="check" class="checkbtn">
             <i class="fa-solid fa-bars"></i>
         </label>
-        <p><a href="index.html" class="logo">LƯU HƯƠNG THÀNH</a></p>
+        <div class="right-nav">
+            <p><a href="index.html" class="logo">LƯU HƯƠNG THÀNH</a></p>
+            <div class="one">
+                <i onclick="openSearch()" id="search-emoji" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
         <ul>
             <li><a href="index.html"><i id="emoji" class="fa-solid fa-house"></i> Trang chủ</a></li>
             <li><a href="about.html"><i id="emoji" class="fa-solid fa-circle-info"></i> Về Chúng Tôi</a></li>
             <li><a class="activePage" href="contact.html"><i id="emoji" class="fa-solid fa-phone"></i> Liên Hệ</a></li>
         </ul>
     </nav>
+
+    <div class="search-nav">
+        <i onclick="closeSearch()" class="fa-solid fa-arrow-left"></i>
+        <input type="search" id="search-products">
+        <i id="search-emoji" class="fa-solid fa-magnifying-glass"></i>
+    </div>
 
     <div class="overlay"></div>
     <main>
@@ -59,6 +70,7 @@
         <p>© 2024 Lưu Hương Thành. All rights reserved.</p>
     </div>
     <script src="js/overlay.js"></script>
+    <script src="js/search.js"></script>
 </body>
 
 </html>

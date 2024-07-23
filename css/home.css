@@ -13,12 +13,7 @@ body {
     display: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
 }
 
@@ -31,19 +26,30 @@ nav {
     background-color: white;
 }
 
-.logo {
+.logo{
     font-weight: bold;
-    text-align: right;
-    padding-top: 15px;
-    padding-right: 20px;
+   text-align: right;
+   padding-top: 15px;
+   padding-right: 20px;
+   padding-left: 20px;
+   font-size: 24px;
+   float: right;
+   user-select: none;
+   background: linear-gradient(90deg, #FF5F6D, #FFC371);
+   background-clip: text;
+   color: transparent;
+   height: 60px;
+}
+.one #search-emoji{
+    padding-top: 17px;
     padding-left: 20px;
     font-size: 24px;
     float: right;
-    user-select: none;
     background: linear-gradient(90deg, #FF5F6D, #FFC371);
     background-clip: text;
     color: transparent;
     height: 60px;
+    cursor: pointer;
 }
 
 nav ul {
@@ -112,6 +118,32 @@ a:not(.logo, .prev, .next, .products-container a):hover {
     transition: .1s ease;
 }
 
+.search-nav{
+    display: none;
+    height: 60px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    line-height: 60px;
+    font-size: 24px;
+    background-color: white;
+    padding-right: 20px;
+}
+
+.search-nav #search-products{
+    font-size: 24px;
+    border-radius: 10px ;
+    margin: 0 20px;
+}
+
+.search-nav #search-emoji,.search-nav i{
+    cursor: pointer;
+    background: linear-gradient(90deg, #FF5F6D, #FFC371);
+    background-clip: text;
+    color: transparent;
+    margin: 0 20px;
+}
+
 @media (max-width: 952px) {
     .logo {
         font-size: 20px;
@@ -122,6 +154,10 @@ a:not(.logo, .prev, .next, .products-container a):hover {
     nav ul li a {
         font-size: 14px;
     }
+}
+.search-nav{
+    position: fixed;
+    z-index: 999;
 }
 
 @media (max-width: 768px) {
@@ -139,7 +175,10 @@ a:not(.logo, .prev, .next, .products-container a):hover {
         margin-top: 0px;
         padding-top: 15px;
     }
-
+    .one #search-emoji{
+        font-size: 16px;
+        padding-top: 15px;
+    }
     ul {
         position: fixed;
         width: 50%;
@@ -158,7 +197,7 @@ a:not(.logo, .prev, .next, .products-container a):hover {
 
     nav ul li a {
         font-size: 12px;
-        padding-right: 35%;
+        padding-right: 30%;
     }
 
     a:hover {
@@ -173,4 +212,15 @@ a:not(.logo, .prev, .next, .products-container a):hover {
         margin-top: 1px;
     }
 
-}
+    .search-nav{
+        font-size: 16px;
+    }
+
+    .search-nav #search-products{
+        font-size: 16px;
+    }
+
+    .search-nav #search-emoji,.search-nav i{
+        margin: 0px;
+    }
+}   
