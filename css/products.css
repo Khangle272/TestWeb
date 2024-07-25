@@ -37,6 +37,12 @@
     background-color: gray;
 }
 
+#no-products-message{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
 @media (max-Width: 768px) {
     .products-container {
         justify-content: center;
@@ -51,5 +57,8 @@
     .products {
         width: 250px;
         height: 250px;
+    }
+    #no-products-message{
+        font-size: 16px;
     }
 }

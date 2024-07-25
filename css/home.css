@@ -89,6 +89,9 @@ a:not(.logo, .prev, .next, .products-container a):hover {
     user-select: none;
     padding: 5px;
     border-radius: 5px;
+    background: linear-gradient(90deg, #FF5F6D, #FFC371);
+    background-clip: text;
+    color: transparent;
 }
 
 .checkbtn:hover {
@@ -135,6 +138,7 @@ a:not(.logo, .prev, .next, .products-container a):hover {
     font-size: 24px;
     border-radius: 5px ;
     margin: 0 20px;
+    height: 50px;
 }
 
 .search-nav #search-emoji,.search-nav i{
@@ -219,6 +223,7 @@ a:not(.logo, .prev, .next, .products-container a):hover {
 
     .search-nav #search-products{
         font-size: 16px;
+        height: 30px;
     }
 
     .search-nav #search-emoji,.search-nav i{
