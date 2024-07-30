@@ -1,23 +1,31 @@
-function closeSearch(){
-    document.querySelector('.search-nav').style.display = 'none';
-    document.getElementById('search-products').value = ''; 
-    resetProducts();
+const toggleSearch = (search, button) => {
+    const searchBar = document.getElementById(search),
+        searchButton = document.getElementById(button),
+        searchInput = document.getElementById('searchStuff');
+
+    searchButton.addEventListener('click', () => {
+        searchBar.classList.toggle('show-search');
+        if (searchBar.classList.contains('show-search')) {
+            searchInput.focus();
+        } else {
+            searchInput.value = '';
+            resetProducts();
+        }
+    });
 }
 
-function openSearch(){
-    document.querySelector('.search-nav').style.display = 'block';
-}
+toggleSearch('search-bar', 'search-button')
 
-function search(){
-    let filter = document.getElementById('search-products').value.toUpperCase();
+function search() {
+    let filter = document.getElementById('searchStuff').value.toUpperCase();
     let items = document.querySelectorAll('.products');
     let noMatch = true;
 
-    for(let i = 0; i < items.length; i++){
+    for (let i = 0; i < items.length; i++) {
         let heading = items[i].getElementsByTagName('h3')[0];
         let value = heading.innerHTML || heading.innerText || heading.textContent;
 
-        if(value.toUpperCase().indexOf(filter) > -1){
+        if (value.toUpperCase().indexOf(filter) > -1) {
             items[i].style.display = '';
             noMatch = false;
         } else {
@@ -40,10 +48,12 @@ function resetProducts() {
 }
 
 function handleSearchInput() {
-    let input = document.getElementById('search-products');
+    let input = document.getElementById('searchStuff');
     if (input.value === '') {
         resetProducts();
     } else {
         search();
     }
 }
+
+document.getElementById('searchStuff').addEventListener('input', handleSearchInput);

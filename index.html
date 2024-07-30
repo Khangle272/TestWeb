@@ -23,23 +23,12 @@
             <i class="fa-solid fa-bars"></i>
         </label>
         <p><a href="index.html" class="logo">LƯU HƯƠNG THÀNH</a></p>
-        <div class="one">
-            <i onclick="openSearch()" id="search-emoji" class="fa-solid fa-magnifying-glass"></i>
-            <i id="shopping" class="fa-solid fa-cart-shopping"></i>
-            <i class="fa-solid fa-right-to-bracket"></i>
-        </div>
         <ul>
             <li><a class="activePage" href="index.html"><i id="emoji" class="fa-solid fa-house"></i> Trang chủ</a></li>
             <li><a href="about.html"><i id="emoji" class="fa-solid fa-circle-info"></i> Về Chúng Tôi</a></li>
             <li><a href="contact.html"><i id="emoji" class="fa-solid fa-phone"></i> Liên Hệ</a></li>
         </ul>
-    </nav>
-
-    <div class="search-nav">
-        <i onclick="closeSearch()" class="fa-solid fa-arrow-left"></i>
-        <input type="search" id="search-products" placeholder="Nhập Tên Sản Phẩm..." onkeyup="search()"
-            oninput="handleSearchInput()">
-    </div>
+    </nav>  
 
     <div class="overlay"></div>
 
@@ -68,6 +57,18 @@
         <h1 class="title" style="text-align: center;">Các Sản Phẩm</h1>
     </div>
     <br>
+
+    <div class="search-container">
+        <form action="" class="search" id="search-bar">
+            <input type="search" placeholder="type something..." class="search-input" id="searchStuff">
+
+            <div class="search__button" id="search-button">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <i class="fa-solid fa-xmark close-icon"></i>
+            </div>
+        </form>
+    </div>
+
     <div id="no-products-message" style="display:none;">Không Tìm Thấy Sản Phẩm</div>
 
     <div class="products-container">
