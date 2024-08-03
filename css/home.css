@@ -9,39 +9,40 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     display: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,h2,h3,h4,h5,h6 {
     font-family: 'Roboto Slab', serif;
     color: black;
 }
 
 nav {
-    height: 60px;
+    height: 50px;
     width: 100%;
     box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25);
     z-index: 5;
     position: fixed;
     background-color: white;
+    text-align: right;
 }
 
-.logo{
+.logo {
     font-weight: bold;
-   padding: 15px;
-   font-size: 24px;
-   float: left;
-   user-select: none;
-   background: linear-gradient(90deg, #FF5F6D, #FFC371);
-   background-clip: text;
-   color: transparent;
-   height: 60px;
+    margin: 10px;
+    font-size: 24px;
+    float: left;
+    user-select: none;
+    background: linear-gradient(90deg, #FF5F6D, #FFC371);
+    background-clip: text;
+    color: transparent;
+    height: 40px;
 }
-
 nav ul li {
     display: inline-block;
-    line-height: 60px;
+    line-height: 50px;
     margin: 0 5px;
 }
 
@@ -49,8 +50,7 @@ nav ul li a {
     color: black;
     font-size: 17px;
     text-transform: uppercase;
-    padding: 7px 12px;
-    padding-bottom: 15px;
+    padding: 7px 10px;
     user-select: none;
     font-weight: bold;
 }
@@ -98,93 +98,6 @@ a:not(.logo, .prev, .next, .products-container a):hover {
     padding-right: 5px;
 }
 
-.activePage {
-    background: linear-gradient(90deg, #FF5F6D, #FFC371);
-    background-clip: text;
-    color: transparent;
-    transition: .1s ease;
-}
-
-.search-container{
-    margin-inline: 1.5rem;
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.search{
-    position: relative;
-    width: 64px;
-    height: 64px;
-    box-shadow: 0 4px 24px hsla(222, 68%, 12%, .1);
-    border-radius: 4rem;
-    padding: 10px;
-    overflow: hidden;
-    transition: width .5s cubic-bezier(.9, 0, .3, .9);
-}
-
-.search-input{
-    border: none;
-    outline: none;
-    height: 100%;
-    border-radius: 4rem;
-    padding-left: 14px;
-    font-weight: 500;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 1.5s;
-    width: 80%;
-    font-size: 16px;
-}
-
-.search__button{
-    width: 48px;
-    height: 48px;
-    background-color: black;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 10px;
-    margin: auto;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-    transition: transform .5s cubic-bezier(.9, 0, .3, .9);
-}
-
-.search-icon, .close-icon{
-    color: white;
-    font-size: 1.5rem;
-    position: absolute;
-    transition: opacity .5s cubic-bezier(.9, 0, .3, .9);
-}
-
-.close-icon{
-    opacity: 0;
-}
-
-.show-search{
-    width: 500px;
-}
-
-.show-search .search-input{
-    opacity: 1;
-    pointer-events: initial;
-}
-
-.show-search .search__button{
-    transform: rotate(90deg);
-}
-
-.show-search .search-icon{
-    opacity: 0;
-}
-
-.show-search .close-icon{
-    opacity: 1;
-}
 @media (max-width: 768px) {
     .checkbtn {
         display: block;
@@ -200,10 +113,12 @@ a:not(.logo, .prev, .next, .products-container a):hover {
         margin-top: 0px;
         padding-top: 15px;
     }
+
     .one {
         font-size: 16px;
         padding-top: 15px;
     }
+
     ul {
         position: fixed;
         width: 50%;
@@ -211,18 +126,18 @@ a:not(.logo, .prev, .next, .products-container a):hover {
         top: 50px;
         left: -100%;
         text-align: left;
-        transition: all .5s ease;
+        transition: all .5s ease-in-out;
         z-index: 5;
     }
 
     nav ul li {
         display: block;
         margin: 0;
+        line-height: 40px;
     }
 
     nav ul li a {
         font-size: 12px;
-        padding-right: 30%;
     }
 
     a:hover {
@@ -236,26 +151,4 @@ a:not(.logo, .prev, .next, .products-container a):hover {
         background-color: hsl(0, 0%, 95%);
         margin-top: 1px;
     }
-
-    .search {
-        width: 48px;  
-        height: 48px; 
-    }
-
-    .search-input {
-        font-size: 14px; 
-    }
-
-    .search__button {
-        width: 36px;  
-        height: 36px;
-    }
-
-    .search-icon, .close-icon {
-        font-size: 1.2rem; 
-    }
-
-    .show-search {
-        width: 300px; 
-    }
-}   
+}

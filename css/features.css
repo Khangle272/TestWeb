@@ -1,0 +1,119 @@
+/*active page*/
+.activePage {
+    background: linear-gradient(90deg, #FF5F6D, #FFC371);
+    background-clip: text;
+    color: transparent;
+    transition: .1s ease-in-out;
+}
+/*search bar*/
+.search-container{
+    margin-inline: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.search{
+    position: relative;
+    width: 64px;
+    height: 64px;
+    box-shadow: 0 4px 24px hsla(222, 68%, 12%, .1);
+    border-radius: 4rem;
+    padding: 10px;
+    overflow: hidden;
+    transition: width .5s cubic-bezier(.9, 0, .3, .9);
+}
+
+.search-input{
+    border: none;
+    outline: none;
+    height: 100%;
+    border-radius: 4rem;
+    padding-left: 14px;
+    font-weight: 500;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.5s;
+    width: 90%;
+    font-size: 16px;
+}
+
+.search__button{
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(90deg, #FF5F6D, #FFC371);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 8px;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: transform .5s cubic-bezier(.9, 0, .3, .9);
+}
+
+.search-icon, .close-icon{
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    transition: opacity .5s cubic-bezier(.9, 0, .3, .9);
+}
+
+.close-icon{
+    opacity: 0;
+}
+
+.show-search{
+    width: 500px;
+}
+
+.show-search .search-input{
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.show-search .search__button{
+    transform: rotate(90deg);
+}
+
+.show-search .search-icon{
+    opacity: 0;
+}
+
+.show-search .close-icon{
+    opacity: 1;
+}
+@media (max-width: 768px){
+    .search {
+        width: 48px;  
+        height: 48px; 
+    }
+
+    .search-input {
+        font-size: 14px; 
+        width: 85%;
+    }
+
+    .search__button {
+        width: 36px;  
+        height: 36px;
+        right: 6px;
+    }
+
+    .search-icon, .close-icon {
+        font-size: 1.2rem; 
+    }
+
+    .show-search {
+        width: 300px; 
+    }
+
+    .signin{
+        font-size: 12px;
+        margin: 10px;
+        padding: 5px;
+    }
+}
