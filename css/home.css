@@ -5,16 +5,16 @@
     list-style: none;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
     color: black;
 }
@@ -25,9 +25,17 @@ nav {
     box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.25);
     z-index: 5;
     position: fixed;
-    background-color: white;
-    text-align: right;
+    background-color: #f2f2f2;
 }
+
+nav ul {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+    flex-grow: 1;
+}
+
 
 .logo {
     font-weight: bold;
@@ -39,7 +47,9 @@ nav {
     background-clip: text;
     color: transparent;
     height: 40px;
+    position: absolute;
 }
+
 nav ul li {
     display: inline-block;
     line-height: 50px;
@@ -75,10 +85,6 @@ a:not(.logo, .prev, .next, .products-container a):hover {
     color: transparent;
 }
 
-.checkbtn:hover {
-    background-color: hsl(0, 0%, 95%);
-}
-
 #check {
     display: none;
 }
@@ -101,17 +107,20 @@ a:not(.logo, .prev, .next, .products-container a):hover {
 @media (max-width: 768px) {
     .checkbtn {
         display: block;
-        font-size: 24px;
+        font-size: 20px;
+        padding: 8px;
     }
 
     nav {
-        height: 50px;
+        display: block;
+        height: 40px;
+        justify-content: space-between;
     }
 
     .logo {
-        font-size: 16px;
-        margin-top: 0px;
-        padding-top: 15px;
+        font-size: 14px;
+        margin: 0px;
+        padding: 12px;
     }
 
     .one {
@@ -123,7 +132,7 @@ a:not(.logo, .prev, .next, .products-container a):hover {
         position: fixed;
         width: 50%;
         height: 100vh;
-        top: 50px;
+        top: 40px;
         left: -100%;
         text-align: left;
         transition: all .5s ease-in-out;
@@ -145,10 +154,12 @@ a:not(.logo, .prev, .next, .products-container a):hover {
     }
 
     #check:checked~ul {
+        display: block;
         left: 0;
         box-shadow: 0 2px 2px hsla(0, 0%, 0%, 0.25);
         margin-left: 0;
         background-color: hsl(0, 0%, 95%);
         margin-top: 1px;
     }
+
 }

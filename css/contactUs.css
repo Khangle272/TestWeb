@@ -5,7 +5,7 @@ main {
     height: calc(100vh - 30vh); 
     padding: 20px;
 }
-h1 {    
+.contactUs-warpper h1 {    
     padding-bottom: 30px;
     text-align: center;
     background: linear-gradient(90deg, #FF5F6D, #FFC371);
@@ -14,17 +14,25 @@ h1 {
     font-size: 48px;
 }
 .location{
-    padding-bottom: 30px;
+    padding: 20px;
     font-size: 24px;
     text-align: center;
 }
 .phoneNumber{
+    padding: 20px;
     font-size: 24px;
     text-align: center;
 }
-.location i{
-    padding-right: 10px;
+#location-emoji{
+    background-color: hsl(0, 0%, 95%);
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px;
 }
-.phoneNumber i{
-    padding-right: 10px;
+#phoneNumber-emoji{
+    background-color: hsl(0, 0%, 95%);
+    padding: 5px;
+    border-radius: 5px;
 }
+

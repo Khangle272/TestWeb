@@ -5,3 +5,4 @@ document.querySelector('.overlay').addEventListener('click', function () {
     document.getElementById('check').checked = false;
     this.style.display = 'none';
 });
+

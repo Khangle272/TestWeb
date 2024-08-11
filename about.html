@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Về Chúng Tôi</title>
-    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/aboutUs.css">
     <link rel="stylesheet" href="css/features.css">
@@ -16,18 +15,7 @@
 </head>
 
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-            <p><a href="index.html" class="logo">LƯU HƯƠNG THÀNH</a></p>
-        <ul>
-            <li id="home"><a href="index.html"><i id="emoji" class="fa-solid fa-house"></i> Trang chủ</a></li>
-            <li id="about"><a class="activePage" href="about.html"><i id="emoji" class="fa-solid fa-circle-info"></i> Về Chúng Tôi</a></li>
-            <li id="contact"><a href="contact.html"><i id="emoji" class="fa-solid fa-phone"></i> Liên Hệ</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar"></nav>
 
     <div class="search-nav">
         <i onclick="closeSearch()" class="fa-solid fa-arrow-left"></i>
@@ -79,6 +67,7 @@
     </div>
     <script src="js/overlay.js"></script>
     <script src="js/search.js"></script>
+    <script src="js/Data.js"></script>
 </body>
 
 </html>

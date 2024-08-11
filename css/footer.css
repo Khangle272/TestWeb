@@ -5,7 +5,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     text-align: center;
-    background-color: hsla(0, 0%, 90%, 0.25);
+    background-color: hsla(0, 0%, 90%);
 }
 
 .quick-links a {
@@ -35,7 +35,7 @@
 
 .footer-bottom {
     width: 100%;
-    background-color: hsla(0, 0%, 90%, 0.25);
+    background-color: hsla(0, 0%, 90%);
     text-align: center;
     padding-bottom: 10px;
 }

@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiệm Nhang Lưu Hương Thành</title>
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/imgSliders.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/imgSliders.css">
     <link rel="stylesheet" href="css/features.css">
-    <link rel="stylesheet" href="css/products.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
         rel="stylesheet">
@@ -17,23 +15,13 @@
 </head>
 
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <p><a href="index.html" class="logo">LƯU HƯƠNG THÀNH</a></p>
-        <ul>
-            <li><a class="activePage" href="index.html"><i id="emoji" class="fa-solid fa-house"></i> Trang chủ</a></li>
-            <li><a href="about.html"><i id="emoji" class="fa-solid fa-circle-info"></i> Về Chúng Tôi</a></li>
-            <li><a href="contact.html"><i id="emoji" class="fa-solid fa-phone"></i> Liên Hệ</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar"></nav>
+    
     <div class="overlay"></div>
 
     <div class="slideshow-containter">
         <div class="mySlides fade">
-            <img src="pictures/1.jpg" style="width: 100%;">
+            <img src="pictures/1.jpg" style="width: 100%">
         </div>
         <div class="mySlides fade">
             <img src="pictures/2.jpg" style="width: 100%;">
@@ -49,17 +37,15 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-    </div>
-    <br>
+    </div><br>
 
     <div class="top-container">
         <h1 class="title" style="text-align: center;">Các Sản Phẩm</h1>
-    </div>
-    <br>
+    </div> <br>
 
     <div class="search-container">
         <form action="" class="search" id="search-bar">
-            <input type="search" placeholder="type something..." class="search-input" id="searchStuff">
+            <input type="search" placeholder="Nhập Tên Sản Phẩm..." class="search-input" id="searchStuff">
 
             <div class="search__button" id="search-button">
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -69,7 +55,7 @@
     </div>
 
     <div id="no-products-message" style="display:none;">Không Tìm Thấy Sản Phẩm</div>
-    
+
     <div class="productList"></div>
 
     <div class="footer">
@@ -90,6 +76,7 @@
     <div class="footer-bottom">
         <p>© 2024 Lưu Hương Thành. All rights reserved.</p>
     </div>
+
     <script src="js/overlay.js"></script>
     <script src="js/imgSliders.js"></script>
     <script src="js/search.js"></script>

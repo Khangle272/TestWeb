@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samsung</title>
-    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/ProductsShow.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/imgSelector.css">
@@ -17,18 +16,7 @@
 </head>
 
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-            <p><a href="index.html" class="logo">LƯU HƯƠNG THÀNH</a></p>
-        <ul>
-            <li><a href="index.html"><i id="emoji" class="fa-solid fa-house"></i> Trang chủ</a></li>
-            <li><a href="about.html"><i id="emoji" class="fa-solid fa-circle-info"></i> Về Chúng Tôi</a></li>
-            <li><a href="contact.html"><i id="emoji" class="fa-solid fa-phone"></i> Liên Hệ</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar"></nav>
 
     <div class="search-nav">
         <i onclick="closeSearch()" class="fa-solid fa-arrow-left"></i>
@@ -60,65 +48,9 @@
                 Nostrum dolorem, sit perspiciatis facere vel, modi at reiciendis delectus autem laborum tempore. Amet,
                 ut.
             </p>
-            <p onclick="moreDetails()" class="moreDetail">Mô Tả Chi Tiết</p>
             <p class="contact">Gọi hotline để đặt hàng: 097 699 0410</p>
         </div>
     </div>
-
-    <div class="moreDetailShow">
-        <div class="header">
-            <div class="desOpen">Mô Tả</div>
-            <div onclick="closeDes()" class="close">X</div>
-        </div>
-        <div class="fullDes">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta repudiandae adipisci ducimus quae! Aut
-            saepe fugit quaerat voluptatibus nemo dignissimos eos nostrum rem? Quas temporibus incidunt laborum expedita
-            molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta repudiandae adipisci ducimus quae! Aut
-            saepe fugit quaerat voluptatibus nemo dignissimos eos nostrum rem? Quas temporibus incidunt laborum expedita
-            molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta repudiandae adipisci ducimus quae! Aut
-            saepe fugit quaerat voluptatibus nemo dignissimos eos nostrum rem? Quas temporibus incidunt laborum expedita
-            molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta repudiandae adipisci ducimus quae! Aut
-            saepe fugit quaerat voluptatibus nemo dignissimos eos nostrum rem? Quas temporibus incidunt laborum expedita
-            molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta repudiandae adipisci ducimus quae! Aut
-            saepe fugit quaerat voluptatibus nemo dignissimos eos nostrum rem? Quas temporibus incidunt laborum expedita
-            molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta repudiandae adipisci ducimus quae! Aut
-            saepe fugit quaerat voluptatibus nemo dignissimos eos nostrum rem? Quas temporibus incidunt laborum expedita
-            molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta repudiandae adipisci ducimus quae! Aut
-            saepe fugit quaerat voluptatibus nemo dignissimos eos nostrum rem? Quas temporibus incidunt laborum expedita
-            molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta repudiandae adipisci ducimus quae! Aut
-            saepe fugit quaerat voluptatibus nemo dignissimos eos nostrum rem? Quas temporibus incidunt laborum expedita
-            molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta repudiandae adipisci ducimus quae! Aut
-            saepe fugit quaerat voluptatibus nemo dignissimos eos nostrum rem? Quas temporibus incidunt laborum expedita
-            molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta repudiandae adipisci ducimus quae! Aut
-            saepe fugit quaerat voluptatibus nemo dignissimos eos nostrum rem? Quas temporibus incidunt laborum expedita
-            molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta repudiandae adipisci ducimus quae! Aut
-            saepe fugit quaerat voluptatibus nemo dignissimos eos nostrum rem? Quas temporibus incidunt laborum expedita
-            molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta repudiandae adipisci ducimus quae! Aut
-            saepe fugit quaerat voluptatibus nemo dignissimos eos nostrum rem? Quas temporibus incidunt laborum expedita
-            molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta repudiandae adipisci ducimus quae! Aut
-            saepe fugit quaerat voluptatibus nemo dignissimos eos nostrum rem? Quas temporibus incidunt laborum expedita
-            molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta repudiandae adipisci ducimus quae! Aut
-            saepe fugit quaerat voluptatibus nemo dignissimos eos nostrum rem? Quas temporibus incidunt laborum expedita
-            molestiae.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A soluta repudiandae adipisci ducimus quae! Aut
-            saepe fugit quaerat voluptatibus nemo dignissimos eos nostrum rem? Quas temporibus incidunt laborum expedita
-            molestiae.
-        </div>
-    </div>
-    <div class="overlayDes"></div>
 
     <div class="popup-img">
         <span>&times;</span>
@@ -147,8 +79,7 @@
     <script src="js/overlay.js"></script>
     <script src="js/zoomImg.js"></script>
     <script src="js/imgSelector.js"></script>
-    <script src="js/moreDes.js"></script>
-    <script src="js/search.js"></script>
+    <script src="js/Data.js"></script>
 </body>
 
 </html>

@@ -17,7 +17,7 @@ let zoom = document.getElementById("zoom");
 let initialDistance = null;
 
 function setTransform() {
-    zoom.style.transform = "translate(" + pointX + "px," + pointY + "px) scale(" + scale + ")";
+    zoom.style.transform = "translate(-50%, -50%) translate(" + pointX + "px," + pointY + "px) scale(" + scale + ")";
 }
 
 function resetZoom() {
