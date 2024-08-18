@@ -50,15 +50,22 @@
     display: none;
 }
 
-.popup-img span {
+.popup-img span{
     position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 60px;
+    top: 20px;
+    right: 30px;
+    font-size: 50px;
     font-weight: bold;
     color: #fff;
     cursor: pointer;
-    z-index: 101;
+    z-index: 100;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+}
+
+.popup-img span:hover{
+    background: linear-gradient(90deg, #FF5F6D, #FFC371);
 }
 
 .popup-img img {
@@ -101,5 +108,11 @@
     .ProductImg #clickToZoom {
         font-size: 24px;
         right: 30px;
+    }
+
+    .popup-img span{
+        top: 10px;
+        right: 20px;
+        font-size: 40px;
     }
 }

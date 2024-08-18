@@ -56,11 +56,6 @@
     padding-right: 30px;
 }
 @media (max-Width: 768px) {
-    .products-container {
-        justify-content: center;
-        align-items: center;
-        margin-left: 0px;
-    }
 
     .products img {
         width: 150px;
